@@ -14,7 +14,7 @@ password = "prince"
 name = "KWEL999"
 secmail = 'https://www.1secmail.com/api/v1/?action='
 count = 0
-
+heroku buildpacks:set heroku/python
 def email_generator():return 'ITACHI-KWEL-999-'+''.join(get(f'{secmail}genRandomMailbox').json())
 
 def device_generator():
